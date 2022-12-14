@@ -16,11 +16,10 @@ int main () {
   sort(pop, pop+N);
   start = 1;
   end = pop[N-1];
-//  cout << pop[N-1] << "\n";
+//binary research the solution:
   while(end - start > 1) {
     s = 0;
     mid = ceil((start+end)/2);
-    //cout << mid << "\n";
     for (i = 0; i < N; i++) {
       s += ceil((float)pop[i]/(float)mid);
     }
@@ -32,7 +31,6 @@ int main () {
     }
   }
   cout << end << "\n";
-
 
 }
 
