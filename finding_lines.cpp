@@ -13,10 +13,6 @@ int main () {
     cin >> P0.first >> P0.second;
     points.push_back(P0);
   }
-  /*Idea: using the fact that p >= 20, the probability that there is such
-  a line, and we take a random couple of points not collinear to that is
-  bounded from above. Repeating the process a sufficient amount of times
-  gives a good probability of producing the right answer.*/
   for (i = 0; i < 250; i++) {
     // take a random P_0 P_1
     r0 = rand() % n;
